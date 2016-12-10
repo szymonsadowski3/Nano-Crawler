@@ -53,8 +53,4 @@ public class WepbageDownloaderViaSockets implements WebpageDownloader {
 			return "";
 		}
 	}
-	
-	public static void main(String[] args) {
-		System.out.println(new WepbageDownloaderViaSockets().downloadWebpage("http://student.agh.edu.pl/~woscwozn/"));
-	}
 }
