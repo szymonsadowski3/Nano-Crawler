@@ -87,7 +87,7 @@ public class URLCrawler implements Crawler {
 
 	public static void main(String[] args) {
 		URLCrawler m = new URLCrawler(new CrawlerLinkListOnArrayList(), new CrawlerVisitedSetOnTreeSet(),
-				new ToFileSaver("links.txt"), new WebpageDownloaderViaURL());
-		m.run("http://kis.agh.edu.pl/");
+				new ToFileSaver(args[0]), new WebpageDownloaderViaURL());
+		m.run(args[1]);
 	}
 }
