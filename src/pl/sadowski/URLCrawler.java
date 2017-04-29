@@ -86,6 +86,11 @@ public class URLCrawler implements Crawler {
 	}
 
 	public static void main(String[] args) {
+		if(args.length < 2) {
+			System.out.println("Not enough arguments specified!");
+			System.exit(0);
+		}
+		
 		URLCrawler m = new URLCrawler(new CrawlerLinkListOnArrayList(), new CrawlerVisitedSetOnTreeSet(),
 				new ToFileSaver(args[0]), new WebpageDownloaderViaURL());
 		m.run(args[1]);
