@@ -1,4 +1,4 @@
-# Nano Crawler
+# module-name  
 
 **Nano Crawler** 
 
@@ -17,6 +17,14 @@ $ git clone https://github.com/szymonsadowski3/Nano-Crawler.gti
 ```
 
 ## Basic use
+
+after clonning:
+
+```
+cd Nano-Crawler/bin/
+
+java -cp . pl.sadowski.URLCrawler <arg1> <agr2>
+```
 
 You need to specify 2 command line arguments:
 
